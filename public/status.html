@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>签约结果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .fail,
+        .success {
+            display: none
+        }
+
+        .status {
+            text-align: center;
+            font-size: 16px;
+            margin: 15px;
+        }
+
+        .status img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .page-wrap {
+            box-sizing: border-box;
+            width: 80%;
+        }
+
+        .btn-primary {
+            width: 100%;
+            background: #fd8238;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            height: 47px;
+            line-height: 47px;
+            border-radius: 4px;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background: #fd8238;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="status fail">
+            <img src="./images/fail.png" alt="">
+            <div class="status-text">签订失败</div>
+        </div>
+        <div class="page-wrap fail ">
+            <button class="btn-primary fail-btn">重新签订</button>
+        </div>
+
+        <div class="status success">
+            <img src="./images/success.png" alt="">
+            <div class="status-text">签订成功</div>
+        </div>
+        <div class="page-wrap success">
+            <button class="btn-primary success-btn" id="success">确定</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+    <script>
+        // 获取返回的参数
+        getParams();
+        function getParams() {
+            var url = window.location.href;
+            if (url.indexOf("?") > 0) {
+                url = url.split("?")[1];
+                arr = url.split("&");
+                var obj = {};
+                for (var i = 0; i < arr.length; i++) {
+                    var arr_list = arr[i].split("=");
+                    obj[arr_list[0]] = arr_list[1];
+                }
+                var rps = decodeURIComponent(obj.rps);
+                rps = JSON.parse(rps)
+                var result = rps.signedValue.result;
+
+                if (result == 'error') {
+                    console.log('失败');
+                    $('.fail').show();
+
+                } else {
+                    console.log('成功');
+                    $('.success').show();
+                }
+            }
+        }
+        $('.fail-btn').click(function () {
+            wx.miniProgram.redirectTo({ url: '/kundian_wedding/pages/center/balance/signContract/signContract' })
+        });
+        $('.success-btn').click(function () {
+            wx.miniProgram.navigateBack({});
+        });
+    </script>
+</body>
+
+</html>

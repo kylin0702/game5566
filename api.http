@@ -1,0 +1,179 @@
+GET https://gun.hanchor.cn/api/relationship/list HTTP/1.1
+content-type: application/json
+
+{
+    "openid":"oeHn64n3QNmrrB7wFINkWA3Q6OL8"
+}
+###
+GET https://gun.hanchor.cn/api/expert/list HTTP/1.1
+content-type: application/json
+
+{
+    "openid":"oeHn64n3QNmrrB7wFINkWA3Q6OL8"
+}
+###
+GET https://gun.hanchor.cn/api/expert/iam_expert_list HTTP/1.1
+content-type: application/json
+
+{
+    "openid":"oeHn64n3QNmrrB7wFINkWA3Q6OL8"
+}
+###
+POST https://gun.hanchor.cn/api/expert/iam_expert_beg HTTP/1.1
+content-type: application/json
+
+{
+    "openid":"oeHn64n3QNmrrB7wFINkWA3Q6OL8",
+    "friend_openid":"oeHn64kA-fIifDkgEZhblaXB4omw"
+}
+
+
+###
+GEt https://gun.hanchor.cn/api/match/info HTTP/1.1
+content-type: application/json
+
+{
+    
+}
+###
+POST https://gun.hanchor.cn/api/match/sign_up HTTP/1.1
+content-type: application/json
+
+{
+    "match_id":1,
+    "openid":"oeHn64n3QNmrrB7wFINkWA3Q6OL8",
+    "weapon_id":"w10000",
+    "weapon_level":505
+}
+
+###
+POST https://gun.hanchor.cn/api/match/upload_level HTTP/1.1
+content-type: application/json
+
+{
+    "openid":"oeHn64n3QNmrrB7wFINkWA3Q6OL8",
+    "weapon_id":"w10000",
+    "weapon_level":550
+}
+
+###
+GET https://game5566.hanchor.net/api/match/rank_list HTTP/1.1
+content-type: application/json
+
+{
+    "match_id":1,
+    "openid":"oeHn64n3QNmrrB7wFINkWA3Q6OL8"
+}
+
+###
+GET https://gun.hanchor.cn/api/match/create_match HTTP/1.1
+content-type: application/json
+
+{
+    
+}
+
+###
+POST https://game5566.hanchor.net/api/blcj/add HTTP/1.1
+content-type: application/json
+
+{
+    "appid":"wx68cb88e7e5e57cc5",
+    "loginCount":1,
+    "openid":"test3323222222",
+    "unionid":"test33232233332",
+    "registerTime":1636599167709,
+    "brand":"brand",
+    "model":"model",
+     "pixelRatio":"pixel_ratio",
+     "screenHeight":"screenHeight",
+    "screenWidth":"screenWidth",
+    "version":"version",
+    "system":"system",
+     "platform":"platform",
+    "SDKVersion":"SDKVersion",
+    "networkType":"networkType",
+    "aid":"aid",
+    "adTag":"adTag",
+    "traceid":"traceid",
+    "isShare":1,
+    "fromUnionid":"test332222"
+}
+
+###
+POST https://game5566.hanchor.net/api/blcj/log HTTP/1.1
+content-type: application/json
+
+{
+    "appid":"wx68cb88e7e5e57cc5",
+    "openid":"testabc",
+    "unionid":"testabc",
+    "loginTime":1636965901617,
+    "reportTime":1636965911661,
+    "playTime":1,
+      "brand":"brand",
+    "model":"model",
+    "pixelRatio":"pixel_ratio",
+     "screenHeight":"screenHeight",
+    "screenWidth":"screenWidth",
+    "version":"version",
+    "system":"system",
+     "platform":"platform",
+    "SDKVersion":"SDKVersion",
+    "networkType":"networkType",
+    "aid":"aid",
+    "adTag":"adTag",
+    "traceid":"traceid"
+}
+
+###
+POST https://game5566.hanchor.net/api/blcj/update_address HTTP/1.1
+content-type: application/json
+
+{
+    
+}
+
+###
+POST https://game5566.hanchor.net/api/user/adCount HTTP/1.1
+content-type: application/json
+
+{
+    "appid":"wx68cb88e7e5e57cc5",
+    "registerTime":1636599167709,
+    "openid":"oeHn64n3QNmrrB7wFINkWA3Q2236OL8",
+    "unionid":"o6_bmasdasdsad6_2sgVt7hM3232ZOPfU",
+    "loginTime":1636599167709, 
+    "type":"watch"
+}
+
+###
+POST https://game5566.hanchor.net/api/blcj/add HTTP/1.1
+content-type: application/json
+
+{
+    "appid":"wx68cb88e7e5e57cc5",
+    "loginCount":1,
+    "openid":"oeHn64n3QNmrrB7wFINkWA3Q2236OL9",
+    "unionid":"o6_bmasdasdsad6_2sgVt7hM3232ZOPfT",
+    "registerTime":1635907535746
+}
+
+POST https://game5566.hanchor.net/api/blcj/log HTTP/1.1
+content-type: application/json
+
+{
+    "appid":"wx68cb88e7e5e57cc5",
+    "openid":"ocpTs4ifaIu7Qc2QM7C6bqQoAAA4I",
+    "unionid":"o6_bmasdasds2ad6_2sgVt7hM3232ZOPfL",
+    "loginTime":1635907535748227324,
+    "reportTime":1635907545743326443,
+    "playTime":33
+}
+
+
+
+
+
+
+

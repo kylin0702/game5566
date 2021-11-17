@@ -1,0 +1,76 @@
+
+k011.png
+size: 619,619
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+s_02
+  rotate: false
+  xy: 132, 47
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+s_05
+  rotate: false
+  xy: 2, 2
+  size: 128, 195
+  orig: 128, 195
+  offset: 0, 0
+  index: -1
+s_06
+  rotate: false
+  xy: 404, 220
+  size: 128, 195
+  orig: 128, 195
+  offset: 0, 0
+  index: -1
+s_08
+  rotate: false
+  xy: 414, 54
+  size: 120, 62
+  orig: 120, 62
+  offset: 0, 0
+  index: -1
+s_10
+  rotate: false
+  xy: 525, 118
+  size: 69, 100
+  orig: 69, 100
+  offset: 0, 0
+  index: -1
+s_14
+  rotate: false
+  xy: 284, 69
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+s_15
+  rotate: false
+  xy: 404, 417
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+s_16
+  rotate: false
+  xy: 534, 264
+  size: 63, 151
+  orig: 63, 151
+  offset: 0, 0
+  index: -1
+s_18
+  rotate: false
+  xy: 414, 118
+  size: 109, 100
+  orig: 109, 100
+  offset: 0, 0
+  index: -1
+timg1
+  rotate: false
+  xy: 2, 199
+  size: 400, 418
+  orig: 400, 418
+  offset: 0, 0
+  index: -1
