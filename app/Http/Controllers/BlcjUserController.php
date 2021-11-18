@@ -191,14 +191,19 @@ class BlcjUserController extends Controller
                      'login_date' =>$date2,
                      'watch_count' =>$type=="watch"?1:0,
                      'rewarded_count' =>$type=="rewarded"?1:0,
+                     'error_count' =>$type=="error"?1:0,
                      'is_new'=>$isNew
                   ]);
             }else{
                if($type=="watch"){
                   $user->watch_count=$user->watch_count+1;
                   $user->save();
-               }else{
+               }else if($type=="rewarded"){
                   $user->rewarded_count=$user->rewarded_count+1;
+                  $user->save();
+               }
+               else{
+                  $user->error_count=$user->error_count+1;
                   $user->save();
                }
             

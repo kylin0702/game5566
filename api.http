@@ -171,6 +171,21 @@ content-type: application/json
     "playTime":33
 }
 
+###
+
+POST https://service-28beebsw-1256750325.gz.apigw.tencentcs.com/release/blcj/log HTTP/1.1
+content-type: application/json
+
+{
+    "appid":"wx68cb88e7e5e57cc5",
+    "openid":"ocpTs4ifaIu7Qc2QM7C6bqQoAAA4I",
+    "unionid":"o6_bmasdasds2ad6_2sgVt7hM3232ZOPfL",
+    "loginTime":1635907535748227324,
+    "reportTime":1635907545743326443,
+    "playTime":33
+}
+
+
 
 
 

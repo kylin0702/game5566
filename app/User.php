@@ -18,7 +18,7 @@ class User extends Authenticatable
     protected $fillable = [
         'openid','unionid','appid','login_count','register_time','register_timestamp','remember_token' ,'avatarUrl','is_share','from_unionid',
         'nickName','name' ,'country' ,'province','language','city' ,'gender','email','password','api_token','is_driver',
-        'network_type','sdk_version','platform','system','version','screen_width','screen_height','pixel_ratio','brand','model','aid','ad_tag','trackid'
+        'network_type','sdk_version','platform','system','version','screen_width','screen_height','pixel_ratio','brand','model','aid','ad_tag','traceid'
     ];
 
     /**

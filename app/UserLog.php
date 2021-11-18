@@ -19,7 +19,7 @@ class UserLog extends Model
      */
     protected $fillable = [
         'openid','unionid','appid','login_time','report_time','game_time','play_time','ip','isp','address','province','city',
-        'sdk_version','platform','system','version','screen_width','screen_height','pixel_ratio','brand','model','share_count','aid','ad_tag','trackid'
+        'sdk_version','platform','system','version','screen_width','screen_height','pixel_ratio','brand','model','share_count','network_type','aid','ad_tag','traceid'
     ];
 
 

@@ -16,7 +16,7 @@ class BlcjUserAd extends Model
      * @var array
      */
     protected $fillable = [
-        'openid','unionid','appid','is_new','login_date','watch_count','rewarded_count'
+        'openid','unionid','appid','is_new','login_date','watch_count','rewarded_count','error_count'
     ];
 
 
